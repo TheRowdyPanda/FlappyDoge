@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC43A15E18B116AE00E1886D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC43A15D18B116AE00E1886D /* Icon.png */; };
+		EC4F0D10192BFD6600BBFA6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D0F192BFD6500BBFA6A /* Social.framework */; };
+		EC4F0D12192BFD6D00BBFA6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D11192BFD6D00BBFA6A /* SystemConfiguration.framework */; };
+		EC4F0D14192BFE4C00BBFA6A /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D13192BFE4C00BBFA6A /* FacebookSDK.framework */; };
+		EC4F0D16192BFE8500BBFA6A /* facebook_128.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D15192BFE8500BBFA6A /* facebook_128.png */; };
+		EC4F0D18192BFE9C00BBFA6A /* twitter_128.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D17192BFE9C00BBFA6A /* twitter_128.png */; };
+		EC4F0D1A192BFEC500BBFA6A /* squarePandaButton_small.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D19192BFEC400BBFA6A /* squarePandaButton_small.png */; };
+		EC4F0D1E192C001E00BBFA6A /* revmob.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D1D192C001E00BBFA6A /* revmob.png */; };
+		EC4F0D20192C00CB00BBFA6A /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D1F192C00CB00BBFA6A /* RevMobAds.framework */; };
+		EC4F0D23192C010A00BBFA6A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4F0D22192C010900BBFA6A /* Reachability.m */; };
+		EC4F0D30192C25B900BBFA6A /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D2E192C25B900BBFA6A /* libGoogleAdMobAds.a */; };
+		EC4F0D31192C25B900BBFA6A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D2F192C25B900BBFA6A /* README.txt */; };
+		EC4F0D33192C2D2F00BBFA6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D32192C2D2F00BBFA6A /* StoreKit.framework */; };
+		EC4F0D35192C2D3600BBFA6A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D34192C2D3600BBFA6A /* MessageUI.framework */; };
+		EC4F0D37192C2D6300BBFA6A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D36192C2D6300BBFA6A /* AdSupport.framework */; };
+		EC4F0D39192C2DBE00BBFA6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D38192C2DBE00BBFA6A /* AudioToolbox.framework */; };
+		EC4F0D3B192C2ECB00BBFA6A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F0D3A192C2ECB00BBFA6A /* CoreTelephony.framework */; };
+		EC4F0D40192C36A600BBFA6A /* Particles_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D3C192C36A600BBFA6A /* Particles_fire.png */; };
+		EC4F0D41192C36A600BBFA6A /* PPEmitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4F0D3E192C36A600BBFA6A /* PPEmitterView.m */; };
+		EC4F0D42192C36A600BBFA6A /* underneath_add_cell.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC4F0D3F192C36A600BBFA6A /* underneath_add_cell.plist */; };
+		EC91BB2818B0D22300951E74 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC91BB2718B0D22300951E74 /* GameKit.framework */; };
+		EC92E9F218AE0D44001CCF30 /* playAgainButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC92E9F118AE0D44001CCF30 /* playAgainButton.png */; };
+		EC92E9F518AE119B001CCF30 /* rope_swinging_swish_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EC92E9F418AE119B001CCF30 /* rope_swinging_swish_2.mp3 */; };
+		EC92E9F718AE9ECF001CCF30 /* beginImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC92E9F618AE9ECF001CCF30 /* beginImage.png */; };
+		EC92E9F918B006F4001CCF30 /* backgroundForFive.png in Resources */ = {isa = PBXBuildFile; fileRef = EC92E9F818B006F4001CCF30 /* backgroundForFive.png */; };
+		EC93905C192DFD50007F83B1 /* addPoint.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC93905A192DFD50007F83B1 /* addPoint.wav */; };
+		EC93905D192DFD50007F83B1 /* deathSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC93905B192DFD50007F83B1 /* deathSound.wav */; };
+		EC93905F192DFDD1007F83B1 /* addTotalPoints.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC93905E192DFDD1007F83B1 /* addTotalPoints.wav */; };
+		EC939061192DFE78007F83B1 /* clickButton.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC939060192DFE78007F83B1 /* clickButton.wav */; };
+		EC939063192E001F007F83B1 /* getMedal.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC939062192E001E007F83B1 /* getMedal.wav */; };
+		ECB24D3218B0746B00BD53A4 /* leadboardImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3118B0746B00BD53A4 /* leadboardImage.png */; };
+		ECB24D3618B0A30500BD53A4 /* medalBronze.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3318B0A30500BD53A4 /* medalBronze.png */; };
+		ECB24D3718B0A30500BD53A4 /* medalGold.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3418B0A30500BD53A4 /* medalGold.png */; };
+		ECB24D3818B0A30500BD53A4 /* medalSilver.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3518B0A30500BD53A4 /* medalSilver.png */; };
+		ECB24D3A18B0BF7000BD53A4 /* medalBronzeDoge.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3918B0BF7000BD53A4 /* medalBronzeDoge.png */; };
+		ECB24D3C18B0BF7900BD53A4 /* medalSilverDoge.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3B18B0BF7900BD53A4 /* medalSilverDoge.png */; };
+		ECB24D3E18B0BF8000BD53A4 /* medalGoldDoge.png in Resources */ = {isa = PBXBuildFile; fileRef = ECB24D3D18B0BF8000BD53A4 /* medalGoldDoge.png */; };
+		ECBE0A2718C29C7600B65743 /* titleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ECBE0A2618C29C7600B65743 /* titleImage.png */; };
+		ECC6E27618AABC2000AECC68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27518AABC2000AECC68 /* Foundation.framework */; };
+		ECC6E27818AABC2000AECC68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27718AABC2000AECC68 /* CoreGraphics.framework */; };
+		ECC6E27A18AABC2000AECC68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27918AABC2000AECC68 /* UIKit.framework */; };
+		ECC6E27C18AABC2000AECC68 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27B18AABC2000AECC68 /* SpriteKit.framework */; };
+		ECC6E28218AABC2000AECC68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E28018AABC2000AECC68 /* InfoPlist.strings */; };
+		ECC6E28418AABC2000AECC68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E28318AABC2000AECC68 /* main.m */; };
+		ECC6E28818AABC2000AECC68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E28718AABC2000AECC68 /* AppDelegate.m */; };
+		ECC6E28B18AABC2000AECC68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E28918AABC2000AECC68 /* Main.storyboard */; };
+		ECC6E28E18AABC2000AECC68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E28D18AABC2000AECC68 /* ViewController.m */; };
+		ECC6E29118AABC2000AECC68 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E29018AABC2000AECC68 /* MyScene.m */; };
+		ECC6E29318AABC2000AECC68 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E29218AABC2000AECC68 /* Spaceship.png */; };
+		ECC6E29518AABC2000AECC68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E29418AABC2000AECC68 /* Images.xcassets */; };
+		ECC6E29C18AABC2000AECC68 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E29B18AABC2000AECC68 /* XCTest.framework */; };
+		ECC6E29D18AABC2000AECC68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27518AABC2000AECC68 /* Foundation.framework */; };
+		ECC6E29E18AABC2000AECC68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E27918AABC2000AECC68 /* UIKit.framework */; };
+		ECC6E2A618AABC2000AECC68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2A418AABC2000AECC68 /* InfoPlist.strings */; };
+		ECC6E2A818AABC2000AECC68 /* FlappyDoge_Version2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E2A718AABC2000AECC68 /* FlappyDoge_Version2Tests.m */; };
+		ECC6E2B318AABC8300AECC68 /* background.gif in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2B218AABC8300AECC68 /* background.gif */; };
+		ECC6E2B518AABCA700AECC68 /* floorLong.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2B418AABCA700AECC68 /* floorLong.png */; };
+		ECC6E2BE18AABD2A00AECC68 /* DogeImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2BD18AABD2A00AECC68 /* DogeImages.atlas */; };
+		ECC6E2C018AAED9500AECC68 /* topPipe.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2BF18AAED9500AECC68 /* topPipe.png */; };
+		ECC6E2C218AB20B800AECC68 /* bottomPipe.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2C118AB20B800AECC68 /* bottomPipe.png */; };
+		ECC6E2C418AB234E00AECC68 /* bottomColor.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2C318AB234E00AECC68 /* bottomColor.png */; };
+		ECC6E2D118AB6D4300AECC68 /* flappyDogeDebug2.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC6E2D018AB6D4300AECC68 /* flappyDogeDebug2.m */; };
+		ECC6E2D318AB8DFA00AECC68 /* newFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2D218AB8DF300AECC68 /* newFont.ttf */; };
+		ECC6E2D518AC758300AECC68 /* loseText.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2D418AC758300AECC68 /* loseText.png */; };
+		ECC6E2D718AC758F00AECC68 /* scoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC6E2D618AC758F00AECC68 /* scoreBoard.png */; };
+		ECC7063718B03BB5007038AE /* newHighScore.png in Resources */ = {isa = PBXBuildFile; fileRef = ECC7063618B03BB5007038AE /* newHighScore.png */; };
+		ECCFE9ED18D405A000C8EBDB /* flappyShibeTitleImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ECCFE9EC18D405A000C8EBDB /* flappyShibeTitleImage.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECC6E29F18AABC2000AECC68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECC6E26A18AABC2000AECC68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECC6E27118AABC2000AECC68;
+			remoteInfo = FlappyDoge_Version2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC43A15D18B116AE00E1886D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../FlappyDoge/Images/Icon.png; sourceTree = "<group>"; };
+		EC4F0D0F192BFD6500BBFA6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EC4F0D11192BFD6D00BBFA6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EC4F0D13192BFE4C00BBFA6A /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		EC4F0D15192BFE8500BBFA6A /* facebook_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_128.png; sourceTree = "<group>"; };
+		EC4F0D17192BFE9C00BBFA6A /* twitter_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter_128.png; sourceTree = "<group>"; };
+		EC4F0D19192BFEC400BBFA6A /* squarePandaButton_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squarePandaButton_small.png; sourceTree = "<group>"; };
+		EC4F0D1D192C001E00BBFA6A /* revmob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = revmob.png; sourceTree = "<group>"; };
+		EC4F0D1F192C00CB00BBFA6A /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		EC4F0D21192C010900BBFA6A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EC4F0D22192C010900BBFA6A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EC4F0D25192C25B900BBFA6A /* GADAdMobExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdMobExtras.h; sourceTree = "<group>"; };
+		EC4F0D26192C25B900BBFA6A /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdNetworkExtras.h; sourceTree = "<group>"; };
+		EC4F0D27192C25B900BBFA6A /* GADAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADAdSize.h; sourceTree = "<group>"; };
+		EC4F0D28192C25B900BBFA6A /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		EC4F0D29192C25B900BBFA6A /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		EC4F0D2A192C25B900BBFA6A /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		EC4F0D2B192C25B900BBFA6A /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		EC4F0D2C192C25B900BBFA6A /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		EC4F0D2D192C25B900BBFA6A /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		EC4F0D2E192C25B900BBFA6A /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		EC4F0D2F192C25B900BBFA6A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		EC4F0D32192C2D2F00BBFA6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EC4F0D34192C2D3600BBFA6A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EC4F0D36192C2D6300BBFA6A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EC4F0D38192C2DBE00BBFA6A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EC4F0D3A192C2ECB00BBFA6A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EC4F0D3C192C36A600BBFA6A /* Particles_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particles_fire.png; sourceTree = "<group>"; };
+		EC4F0D3D192C36A600BBFA6A /* PPEmitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPEmitterView.h; sourceTree = "<group>"; };
+		EC4F0D3E192C36A600BBFA6A /* PPEmitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPEmitterView.m; sourceTree = "<group>"; };
+		EC4F0D3F192C36A600BBFA6A /* underneath_add_cell.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = underneath_add_cell.plist; sourceTree = "<group>"; };
+		EC91BB2718B0D22300951E74 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EC92E9F118AE0D44001CCF30 /* playAgainButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playAgainButton.png; sourceTree = "<group>"; };
+		EC92E9F418AE119B001CCF30 /* rope_swinging_swish_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rope_swinging_swish_2.mp3; sourceTree = "<group>"; };
+		EC92E9F618AE9ECF001CCF30 /* beginImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginImage.png; sourceTree = "<group>"; };
+		EC92E9F818B006F4001CCF30 /* backgroundForFive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundForFive.png; sourceTree = "<group>"; };
+		EC93905A192DFD50007F83B1 /* addPoint.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = addPoint.wav; sourceTree = "<group>"; };
+		EC93905B192DFD50007F83B1 /* deathSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = deathSound.wav; sourceTree = "<group>"; };
+		EC93905E192DFDD1007F83B1 /* addTotalPoints.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = addTotalPoints.wav; sourceTree = "<group>"; };
+		EC939060192DFE78007F83B1 /* clickButton.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickButton.wav; sourceTree = "<group>"; };
+		EC939062192E001E007F83B1 /* getMedal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = getMedal.wav; sourceTree = "<group>"; };
+		ECB24D3118B0746B00BD53A4 /* leadboardImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leadboardImage.png; sourceTree = "<group>"; };
+		ECB24D3318B0A30500BD53A4 /* medalBronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalBronze.png; sourceTree = "<group>"; };
+		ECB24D3418B0A30500BD53A4 /* medalGold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalGold.png; sourceTree = "<group>"; };
+		ECB24D3518B0A30500BD53A4 /* medalSilver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalSilver.png; sourceTree = "<group>"; };
+		ECB24D3918B0BF7000BD53A4 /* medalBronzeDoge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalBronzeDoge.png; sourceTree = "<group>"; };
+		ECB24D3B18B0BF7900BD53A4 /* medalSilverDoge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalSilverDoge.png; sourceTree = "<group>"; };
+		ECB24D3D18B0BF8000BD53A4 /* medalGoldDoge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalGoldDoge.png; sourceTree = "<group>"; };
+		ECBE0A2618C29C7600B65743 /* titleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titleImage.png; sourceTree = "<group>"; };
+		ECC6E27218AABC2000AECC68 /* FlappyDoge_Version2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyDoge_Version2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC6E27518AABC2000AECC68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECC6E27718AABC2000AECC68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECC6E27918AABC2000AECC68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECC6E27B18AABC2000AECC68 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		ECC6E27F18AABC2000AECC68 /* FlappyDoge_Version2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappyDoge_Version2-Info.plist"; sourceTree = "<group>"; };
+		ECC6E28118AABC2000AECC68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECC6E28318AABC2000AECC68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECC6E28518AABC2000AECC68 /* FlappyDoge_Version2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlappyDoge_Version2-Prefix.pch"; sourceTree = "<group>"; };
+		ECC6E28618AABC2000AECC68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECC6E28718AABC2000AECC68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECC6E28A18AABC2000AECC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECC6E28C18AABC2000AECC68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECC6E28D18AABC2000AECC68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECC6E28F18AABC2000AECC68 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		ECC6E29018AABC2000AECC68 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		ECC6E29218AABC2000AECC68 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		ECC6E29418AABC2000AECC68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECC6E29A18AABC2000AECC68 /* FlappyDoge_Version2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyDoge_Version2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC6E29B18AABC2000AECC68 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECC6E2A318AABC2000AECC68 /* FlappyDoge_Version2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappyDoge_Version2Tests-Info.plist"; sourceTree = "<group>"; };
+		ECC6E2A518AABC2000AECC68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECC6E2A718AABC2000AECC68 /* FlappyDoge_Version2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappyDoge_Version2Tests.m; sourceTree = "<group>"; };
+		ECC6E2B218AABC8300AECC68 /* background.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = background.gif; sourceTree = "<group>"; };
+		ECC6E2B418AABCA700AECC68 /* floorLong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floorLong.png; sourceTree = "<group>"; };
+		ECC6E2BD18AABD2A00AECC68 /* DogeImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = DogeImages.atlas; sourceTree = "<group>"; };
+		ECC6E2BF18AAED9500AECC68 /* topPipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topPipe.png; sourceTree = "<group>"; };
+		ECC6E2C118AB20B800AECC68 /* bottomPipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomPipe.png; sourceTree = "<group>"; };
+		ECC6E2C318AB234E00AECC68 /* bottomColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomColor.png; sourceTree = "<group>"; };
+		ECC6E2CF18AB6D4300AECC68 /* flappyDogeDebug2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flappyDogeDebug2.h; path = FlappyDoge_Version2/flappyDogeDebug2.h; sourceTree = "<group>"; };
+		ECC6E2D018AB6D4300AECC68 /* flappyDogeDebug2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = flappyDogeDebug2.m; path = FlappyDoge_Version2/flappyDogeDebug2.m; sourceTree = "<group>"; };
+		ECC6E2D218AB8DF300AECC68 /* newFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = newFont.ttf; sourceTree = "<group>"; };
+		ECC6E2D418AC758300AECC68 /* loseText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loseText.png; sourceTree = "<group>"; };
+		ECC6E2D618AC758F00AECC68 /* scoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreBoard.png; sourceTree = "<group>"; };
+		ECC7063618B03BB5007038AE /* newHighScore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newHighScore.png; path = ../FlappyDoge/Images/newHighScore.png; sourceTree = "<group>"; };
+		ECCFE9EC18D405A000C8EBDB /* flappyShibeTitleImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappyShibeTitleImage.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECC6E26F18AABC2000AECC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4F0D3B192C2ECB00BBFA6A /* CoreTelephony.framework in Frameworks */,
+				EC4F0D39192C2DBE00BBFA6A /* AudioToolbox.framework in Frameworks */,
+				EC4F0D37192C2D6300BBFA6A /* AdSupport.framework in Frameworks */,
+				EC4F0D35192C2D3600BBFA6A /* MessageUI.framework in Frameworks */,
+				EC4F0D33192C2D2F00BBFA6A /* StoreKit.framework in Frameworks */,
+				EC4F0D12192BFD6D00BBFA6A /* SystemConfiguration.framework in Frameworks */,
+				EC4F0D10192BFD6600BBFA6A /* Social.framework in Frameworks */,
+				EC91BB2818B0D22300951E74 /* GameKit.framework in Frameworks */,
+				ECC6E27818AABC2000AECC68 /* CoreGraphics.framework in Frameworks */,
+				ECC6E27A18AABC2000AECC68 /* UIKit.framework in Frameworks */,
+				EC4F0D20192C00CB00BBFA6A /* RevMobAds.framework in Frameworks */,
+				EC4F0D14192BFE4C00BBFA6A /* FacebookSDK.framework in Frameworks */,
+				ECC6E27C18AABC2000AECC68 /* SpriteKit.framework in Frameworks */,
+				ECC6E27618AABC2000AECC68 /* Foundation.framework in Frameworks */,
+				EC4F0D30192C25B900BBFA6A /* libGoogleAdMobAds.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC6E29718AABC2000AECC68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC6E29C18AABC2000AECC68 /* XCTest.framework in Frameworks */,
+				ECC6E29E18AABC2000AECC68 /* UIKit.framework in Frameworks */,
+				ECC6E29D18AABC2000AECC68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC4F0D24192C25AD00BBFA6A /* admob */ = {
+			isa = PBXGroup;
+			children = (
+				EC4F0D25192C25B900BBFA6A /* GADAdMobExtras.h */,
+				EC4F0D26192C25B900BBFA6A /* GADAdNetworkExtras.h */,
+				EC4F0D27192C25B900BBFA6A /* GADAdSize.h */,
+				EC4F0D28192C25B900BBFA6A /* GADBannerView.h */,
+				EC4F0D29192C25B900BBFA6A /* GADBannerViewDelegate.h */,
+				EC4F0D2A192C25B900BBFA6A /* GADInterstitial.h */,
+				EC4F0D2B192C25B900BBFA6A /* GADInterstitialDelegate.h */,
+				EC4F0D2C192C25B900BBFA6A /* GADRequest.h */,
+				EC4F0D2D192C25B900BBFA6A /* GADRequestError.h */,
+				EC4F0D2E192C25B900BBFA6A /* libGoogleAdMobAds.a */,
+				EC4F0D2F192C25B900BBFA6A /* README.txt */,
+			);
+			name = admob;
+			sourceTree = "<group>";
+		};
+		EC92E9F318AE118D001CCF30 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EC93905A192DFD50007F83B1 /* addPoint.wav */,
+				EC93905B192DFD50007F83B1 /* deathSound.wav */,
+				EC92E9F418AE119B001CCF30 /* rope_swinging_swish_2.mp3 */,
+				EC939060192DFE78007F83B1 /* clickButton.wav */,
+				EC93905E192DFDD1007F83B1 /* addTotalPoints.wav */,
+				EC939062192E001E007F83B1 /* getMedal.wav */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		EC939059192DF840007F83B1 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		ECC6E26918AABC2000AECC68 = {
+			isa = PBXGroup;
+			children = (
+				EC4F0D24192C25AD00BBFA6A /* admob */,
+				EC92E9F318AE118D001CCF30 /* sounds */,
+				EC4F0D21192C010900BBFA6A /* Reachability.h */,
+				EC4F0D22192C010900BBFA6A /* Reachability.m */,
+				ECC6E2CF18AB6D4300AECC68 /* flappyDogeDebug2.h */,
+				ECC6E2D018AB6D4300AECC68 /* flappyDogeDebug2.m */,
+				EC43A15D18B116AE00E1886D /* Icon.png */,
+				ECC6E2B118AABC6400AECC68 /* images */,
+				EC4F0D15192BFE8500BBFA6A /* facebook_128.png */,
+				EC4F0D17192BFE9C00BBFA6A /* twitter_128.png */,
+				EC4F0D19192BFEC400BBFA6A /* squarePandaButton_small.png */,
+				EC4F0D1D192C001E00BBFA6A /* revmob.png */,
+				ECC6E27D18AABC2000AECC68 /* FlappyDoge_Version2 */,
+				ECC6E2A118AABC2000AECC68 /* FlappyDoge_Version2Tests */,
+				ECC6E27418AABC2000AECC68 /* Frameworks */,
+				ECC6E27318AABC2000AECC68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECC6E27318AABC2000AECC68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6E27218AABC2000AECC68 /* FlappyDoge_Version2.app */,
+				ECC6E29A18AABC2000AECC68 /* FlappyDoge_Version2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECC6E27418AABC2000AECC68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC4F0D3A192C2ECB00BBFA6A /* CoreTelephony.framework */,
+				EC4F0D38192C2DBE00BBFA6A /* AudioToolbox.framework */,
+				EC4F0D36192C2D6300BBFA6A /* AdSupport.framework */,
+				EC4F0D34192C2D3600BBFA6A /* MessageUI.framework */,
+				EC4F0D32192C2D2F00BBFA6A /* StoreKit.framework */,
+				EC4F0D1F192C00CB00BBFA6A /* RevMobAds.framework */,
+				EC4F0D13192BFE4C00BBFA6A /* FacebookSDK.framework */,
+				EC4F0D11192BFD6D00BBFA6A /* SystemConfiguration.framework */,
+				EC4F0D0F192BFD6500BBFA6A /* Social.framework */,
+				EC91BB2718B0D22300951E74 /* GameKit.framework */,
+				ECC6E27518AABC2000AECC68 /* Foundation.framework */,
+				ECC6E27718AABC2000AECC68 /* CoreGraphics.framework */,
+				ECC6E27918AABC2000AECC68 /* UIKit.framework */,
+				ECC6E27B18AABC2000AECC68 /* SpriteKit.framework */,
+				ECC6E29B18AABC2000AECC68 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECC6E27D18AABC2000AECC68 /* FlappyDoge_Version2 */ = {
+			isa = PBXGroup;
+			children = (
+				EC939059192DF840007F83B1 /* iPad */,
+				ECC6E2BD18AABD2A00AECC68 /* DogeImages.atlas */,
+				EC4F0D3C192C36A600BBFA6A /* Particles_fire.png */,
+				EC4F0D3D192C36A600BBFA6A /* PPEmitterView.h */,
+				EC4F0D3E192C36A600BBFA6A /* PPEmitterView.m */,
+				EC4F0D3F192C36A600BBFA6A /* underneath_add_cell.plist */,
+				ECC6E28618AABC2000AECC68 /* AppDelegate.h */,
+				ECC6E28718AABC2000AECC68 /* AppDelegate.m */,
+				ECC6E28918AABC2000AECC68 /* Main.storyboard */,
+				ECC6E28C18AABC2000AECC68 /* ViewController.h */,
+				ECC6E28D18AABC2000AECC68 /* ViewController.m */,
+				ECC6E28F18AABC2000AECC68 /* MyScene.h */,
+				ECC6E29018AABC2000AECC68 /* MyScene.m */,
+				ECC6E29218AABC2000AECC68 /* Spaceship.png */,
+				ECC6E29418AABC2000AECC68 /* Images.xcassets */,
+				ECC6E27E18AABC2000AECC68 /* Supporting Files */,
+			);
+			path = FlappyDoge_Version2;
+			sourceTree = "<group>";
+		};
+		ECC6E27E18AABC2000AECC68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6E27F18AABC2000AECC68 /* FlappyDoge_Version2-Info.plist */,
+				ECC6E28018AABC2000AECC68 /* InfoPlist.strings */,
+				ECC6E2D218AB8DF300AECC68 /* newFont.ttf */,
+				ECC6E28318AABC2000AECC68 /* main.m */,
+				ECC6E28518AABC2000AECC68 /* FlappyDoge_Version2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECC6E2A118AABC2000AECC68 /* FlappyDoge_Version2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6E2A718AABC2000AECC68 /* FlappyDoge_Version2Tests.m */,
+				ECC6E2A218AABC2000AECC68 /* Supporting Files */,
+			);
+			path = FlappyDoge_Version2Tests;
+			sourceTree = "<group>";
+		};
+		ECC6E2A218AABC2000AECC68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6E2A318AABC2000AECC68 /* FlappyDoge_Version2Tests-Info.plist */,
+				ECC6E2A418AABC2000AECC68 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECC6E2B118AABC6400AECC68 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ECBE0A2618C29C7600B65743 /* titleImage.png */,
+				ECC6E2B218AABC8300AECC68 /* background.gif */,
+				ECC6E2B418AABCA700AECC68 /* floorLong.png */,
+				ECCFE9EC18D405A000C8EBDB /* flappyShibeTitleImage.png */,
+				ECC6E2BF18AAED9500AECC68 /* topPipe.png */,
+				ECC6E2C118AB20B800AECC68 /* bottomPipe.png */,
+				ECC6E2C318AB234E00AECC68 /* bottomColor.png */,
+				ECC6E2D418AC758300AECC68 /* loseText.png */,
+				ECC6E2D618AC758F00AECC68 /* scoreBoard.png */,
+				EC92E9F118AE0D44001CCF30 /* playAgainButton.png */,
+				EC92E9F618AE9ECF001CCF30 /* beginImage.png */,
+				EC92E9F818B006F4001CCF30 /* backgroundForFive.png */,
+				ECC7063618B03BB5007038AE /* newHighScore.png */,
+				ECB24D3118B0746B00BD53A4 /* leadboardImage.png */,
+				ECB24D3318B0A30500BD53A4 /* medalBronze.png */,
+				ECB24D3418B0A30500BD53A4 /* medalGold.png */,
+				ECB24D3518B0A30500BD53A4 /* medalSilver.png */,
+				ECB24D3918B0BF7000BD53A4 /* medalBronzeDoge.png */,
+				ECB24D3B18B0BF7900BD53A4 /* medalSilverDoge.png */,
+				ECB24D3D18B0BF8000BD53A4 /* medalGoldDoge.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECC6E27118AABC2000AECC68 /* FlappyDoge_Version2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC6E2AB18AABC2000AECC68 /* Build configuration list for PBXNativeTarget "FlappyDoge_Version2" */;
+			buildPhases = (
+				ECC6E26E18AABC2000AECC68 /* Sources */,
+				ECC6E26F18AABC2000AECC68 /* Frameworks */,
+				ECC6E27018AABC2000AECC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlappyDoge_Version2;
+			productName = FlappyDoge_Version2;
+			productReference = ECC6E27218AABC2000AECC68 /* FlappyDoge_Version2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECC6E29918AABC2000AECC68 /* FlappyDoge_Version2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECC6E2AE18AABC2000AECC68 /* Build configuration list for PBXNativeTarget "FlappyDoge_Version2Tests" */;
+			buildPhases = (
+				ECC6E29618AABC2000AECC68 /* Sources */,
+				ECC6E29718AABC2000AECC68 /* Frameworks */,
+				ECC6E29818AABC2000AECC68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECC6E2A018AABC2000AECC68 /* PBXTargetDependency */,
+			);
+			name = FlappyDoge_Version2Tests;
+			productName = FlappyDoge_Version2Tests;
+			productReference = ECC6E29A18AABC2000AECC68 /* FlappyDoge_Version2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECC6E26A18AABC2000AECC68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rijul Gupta";
+				TargetAttributes = {
+					ECC6E27118AABC2000AECC68 = {
+						DevelopmentTeam = 6835C33SXY;
+					};
+					ECC6E29918AABC2000AECC68 = {
+						TestTargetID = ECC6E27118AABC2000AECC68;
+					};
+				};
+			};
+			buildConfigurationList = ECC6E26D18AABC2000AECC68 /* Build configuration list for PBXProject "FlappyDoge_Version2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECC6E26918AABC2000AECC68;
+			productRefGroup = ECC6E27318AABC2000AECC68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECC6E27118AABC2000AECC68 /* FlappyDoge_Version2 */,
+				ECC6E29918AABC2000AECC68 /* FlappyDoge_Version2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECC6E27018AABC2000AECC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC93905D192DFD50007F83B1 /* deathSound.wav in Resources */,
+				ECCFE9ED18D405A000C8EBDB /* flappyShibeTitleImage.png in Resources */,
+				ECB24D3818B0A30500BD53A4 /* medalSilver.png in Resources */,
+				ECC6E2D718AC758F00AECC68 /* scoreBoard.png in Resources */,
+				EC4F0D40192C36A600BBFA6A /* Particles_fire.png in Resources */,
+				ECC6E2D318AB8DFA00AECC68 /* newFont.ttf in Resources */,
+				ECB24D3718B0A30500BD53A4 /* medalGold.png in Resources */,
+				EC92E9F218AE0D44001CCF30 /* playAgainButton.png in Resources */,
+				ECB24D3C18B0BF7900BD53A4 /* medalSilverDoge.png in Resources */,
+				ECB24D3E18B0BF8000BD53A4 /* medalGoldDoge.png in Resources */,
+				EC4F0D1E192C001E00BBFA6A /* revmob.png in Resources */,
+				EC92E9F918B006F4001CCF30 /* backgroundForFive.png in Resources */,
+				EC93905C192DFD50007F83B1 /* addPoint.wav in Resources */,
+				ECB24D3218B0746B00BD53A4 /* leadboardImage.png in Resources */,
+				ECC6E28218AABC2000AECC68 /* InfoPlist.strings in Resources */,
+				ECC6E2BE18AABD2A00AECC68 /* DogeImages.atlas in Resources */,
+				EC4F0D31192C25B900BBFA6A /* README.txt in Resources */,
+				ECBE0A2718C29C7600B65743 /* titleImage.png in Resources */,
+				ECC6E2B318AABC8300AECC68 /* background.gif in Resources */,
+				ECC6E29518AABC2000AECC68 /* Images.xcassets in Resources */,
+				ECC6E2C418AB234E00AECC68 /* bottomColor.png in Resources */,
+				ECC6E29318AABC2000AECC68 /* Spaceship.png in Resources */,
+				EC92E9F718AE9ECF001CCF30 /* beginImage.png in Resources */,
+				EC4F0D1A192BFEC500BBFA6A /* squarePandaButton_small.png in Resources */,
+				ECC7063718B03BB5007038AE /* newHighScore.png in Resources */,
+				ECC6E2C218AB20B800AECC68 /* bottomPipe.png in Resources */,
+				ECB24D3A18B0BF7000BD53A4 /* medalBronzeDoge.png in Resources */,
+				EC939063192E001F007F83B1 /* getMedal.wav in Resources */,
+				ECC6E2B518AABCA700AECC68 /* floorLong.png in Resources */,
+				EC43A15E18B116AE00E1886D /* Icon.png in Resources */,
+				ECC6E28B18AABC2000AECC68 /* Main.storyboard in Resources */,
+				EC93905F192DFDD1007F83B1 /* addTotalPoints.wav in Resources */,
+				ECC6E2C018AAED9500AECC68 /* topPipe.png in Resources */,
+				EC4F0D18192BFE9C00BBFA6A /* twitter_128.png in Resources */,
+				ECB24D3618B0A30500BD53A4 /* medalBronze.png in Resources */,
+				EC4F0D42192C36A600BBFA6A /* underneath_add_cell.plist in Resources */,
+				EC4F0D16192BFE8500BBFA6A /* facebook_128.png in Resources */,
+				EC92E9F518AE119B001CCF30 /* rope_swinging_swish_2.mp3 in Resources */,
+				EC939061192DFE78007F83B1 /* clickButton.wav in Resources */,
+				ECC6E2D518AC758300AECC68 /* loseText.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC6E29818AABC2000AECC68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC6E2A618AABC2000AECC68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECC6E26E18AABC2000AECC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC6E29118AABC2000AECC68 /* MyScene.m in Sources */,
+				ECC6E28E18AABC2000AECC68 /* ViewController.m in Sources */,
+				ECC6E2D118AB6D4300AECC68 /* flappyDogeDebug2.m in Sources */,
+				ECC6E28818AABC2000AECC68 /* AppDelegate.m in Sources */,
+				EC4F0D23192C010A00BBFA6A /* Reachability.m in Sources */,
+				EC4F0D41192C36A600BBFA6A /* PPEmitterView.m in Sources */,
+				ECC6E28418AABC2000AECC68 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECC6E29618AABC2000AECC68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC6E2A818AABC2000AECC68 /* FlappyDoge_Version2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECC6E2A018AABC2000AECC68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECC6E27118AABC2000AECC68 /* FlappyDoge_Version2 */;
+			targetProxy = ECC6E29F18AABC2000AECC68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECC6E28018AABC2000AECC68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC6E28118AABC2000AECC68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECC6E28918AABC2000AECC68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC6E28A18AABC2000AECC68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECC6E2A418AABC2000AECC68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECC6E2A518AABC2000AECC68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECC6E2A918AABC2000AECC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECC6E2AA18AABC2000AECC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECC6E2AC18AABC2000AECC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyDoge_Version2/FlappyDoge_Version2-Prefix.pch";
+				INFOPLIST_FILE = "FlappyDoge_Version2/FlappyDoge_Version2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECC6E2AD18AABC2000AECC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyDoge_Version2/FlappyDoge_Version2-Prefix.pch";
+				INFOPLIST_FILE = "FlappyDoge_Version2/FlappyDoge_Version2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECC6E2AF18AABC2000AECC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappyDoge_Version2.app/FlappyDoge_Version2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyDoge_Version2/FlappyDoge_Version2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlappyDoge_Version2Tests/FlappyDoge_Version2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECC6E2B018AABC2000AECC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappyDoge_Version2.app/FlappyDoge_Version2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyDoge_Version2/FlappyDoge_Version2-Prefix.pch";
+				INFOPLIST_FILE = "FlappyDoge_Version2Tests/FlappyDoge_Version2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECC6E26D18AABC2000AECC68 /* Build configuration list for PBXProject "FlappyDoge_Version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC6E2A918AABC2000AECC68 /* Debug */,
+				ECC6E2AA18AABC2000AECC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC6E2AB18AABC2000AECC68 /* Build configuration list for PBXNativeTarget "FlappyDoge_Version2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC6E2AC18AABC2000AECC68 /* Debug */,
+				ECC6E2AD18AABC2000AECC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECC6E2AE18AABC2000AECC68 /* Build configuration list for PBXNativeTarget "FlappyDoge_Version2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECC6E2AF18AABC2000AECC68 /* Debug */,
+				ECC6E2B018AABC2000AECC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECC6E26A18AABC2000AECC68 /* Project object */;
+}
